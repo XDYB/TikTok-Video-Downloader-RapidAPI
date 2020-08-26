@@ -1,10 +1,13 @@
 {
-  "name": "tiktok-downloader-php",
+  "name": "tiktok-downloader-php-rapidapi",
   "version": "1.0.0",
+  "private": true,
   "description": "TikTok Downloader",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp",
+    "start": "gulp live",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
   },
   "author": "WPPressPlugin",
   "license": "MIT",

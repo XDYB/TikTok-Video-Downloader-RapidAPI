@@ -1,0 +1,93 @@
+@mixin respondTo($media) {
+    $screen-xs: 480px !default;
+    $screen-sm: 768px !default;
+    $screen-md: 1200px !default;
+    $screen-lg: 1300px !default; // usual stuff to match resolution intervals
+    @if $media==xs {
+        @media all and ( max-width: #{$screen-xs - 1}) {
+            @content;
+        }
+    }
+    @else if $media==sm {
+        @media all and ( min-width: $screen-xs) and ( max-width:#{$screen-md - 1}) {
+            @content;
+        }
+    }
+    @else if $media==md {
+        @media all and ( min-width: $screen-md) and ( max-width:#{$screen-lg - 1}) {
+            @content;
+        }
+    }
+    @else if $media==lg {
+        @media all and (min-width: $screen-lg) {
+            @content;
+        }
+    } // special rules to match only max/min values
+    @else if $media==upto_sm {
+        @media all and ( max-width: #{$screen-sm - 1}) {
+            @content;
+        }
+    }
+    @else if $media==upto_md {
+        @media all and ( max-width: #{$screen-md - 1}) {
+            @content;
+        }
+    }
+    @else if $media==upto_lg {
+        @media all and ( max-width:#{$screen-lg - 1}) {
+            @content;
+        }
+    }
+    @else if $media==xs_up {
+        @media all and (min-width: $screen-xs) {
+            @content;
+        }
+    }
+    @else if $media==sm_up {
+        @media all and (min-width: $screen-sm) {
+            @content;
+        }
+    }
+    @else if $media==md_up {
+        @media all and (min-width: $screen-md) {
+            @content;
+        }
+    }
+    @else if $media==lg_up {
+        @media all and (min-width: $screen-lg) {
+            @content;
+        }
+    }
+}
+@mixin tab() {
+    @include respondTo(sm_up) {
+        @content;
+    }
+}
+@mixin desktop() {
+    @include respondTo(md_up) {
+        @content;
+    }
+}
+@mixin large() {
+    @include respondTo(lg_up) {
+        @content;
+    }
+}
+@mixin mobile() {
+    @include respondTo(xs_up) {
+        @content;
+    }
+}
+@mixin clearfix() {
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin easing() {
+    transition: all 300ms ease-in-out;
+}

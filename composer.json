@@ -1,0 +1,21 @@
+{
+    "name": "wppressplugin/tiktok-downloader",
+    "description": "Download TikTok Videos & Music without watermark",
+    "type": "project",
+    "require": {
+        "phpfastcache/phpfastcache": "^7.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WPPressPlugin",
+            "email": "info@wppress.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TikTok\\": "api"
+        }
+    },
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "tiktok-downloader-php",
+  "version": "1.0.0",
+  "description": "TikTok Downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WPPressPlugin",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootswatch": "^4.5.2",
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0",
+    "underscore": "^1.10.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1",
+    "@babel/polyfill": "^7.10.1",
+    "@wordpress/babel-preset-default": "^4.16.0",
+    "autoprefixer": "^9.8.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "core-js": "^3.6.5",
+    "del": "^5.1.0",
+    "fs": "0.0.2",
+    "gulp": "^4.0.2",
+    "gulp-buffer": "0.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.9",
+    "gulp-livereload": "^4.0.2",
+    "gulp-load-plugins": "^2.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tap": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "merge-stream": "^2.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1",
+    "websocket-extensions": "^0.1.4"
+  }
+}

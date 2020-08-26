@@ -1,0 +1,8 @@
+/node_modules
+/build
+/zip
+/vendor
+/assets
+/languages
+/_config/*.php
+/cache

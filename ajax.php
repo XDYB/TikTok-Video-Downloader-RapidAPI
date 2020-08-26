@@ -8,7 +8,7 @@ header("Connection: close");
 if (isset($_GET['search']) && !empty($_GET['search'])) {
     $search = get_param('search');
     $type   = get_param('type');
-    $api    = new \TikTok\Api(["api-key"=>get_option('rapidapi_key')]);
+    $api    = new \RapidTikTok\Api(["api-key"=>get_option('rapidapi_key')]);
     switch ($type) {
         case "url":
             $data = $api->getVideoByUrl($search);

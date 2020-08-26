@@ -4,7 +4,7 @@ require_once INC_DIR . "functions.php";
 if (isset($_GET['url']) && !empty($_GET['url'])) {
     $url   = get_param('url');
     $key   = get_param('key');
-    $api   = new \TikTok\Api(["api-key" => get_option('rapidapi_key')]);
+    $api   = new \RapidTikTok\Api(["api-key" => get_option('rapidapi_key')]);
     $video = $api->getVideo($url);
     if ($video) {
         switch ($key) {

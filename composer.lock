@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85877e16ba365046204be84aebdbbf03",
+    "content-hash": "aebd01466bcd9bdc1b907ec6d9792dfd",
     "packages": [
         {
             "name": "phpfastcache/phpfastcache",
@@ -209,6 +209,46 @@
                 "simple-cache"
             ],
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "ssovit/rapid-tiktok",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ssovit/RapidTikTok.git",
+                "reference": "bf69d3b57298bfa38ecf2b120502de0ae8faf8cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ssovit/RapidTikTok/zipball/bf69d3b57298bfa38ecf2b120502de0ae8faf8cf",
+                "reference": "bf69d3b57298bfa38ecf2b120502de0ae8faf8cf",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RapidTikTok\\": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sovit Tamrakar",
+                    "email": "sovit.tamrakar@gmail.com",
+                    "homepage": "https://github.com/ssovit/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Unofficial TikTok API for PHP via RapidAPI",
+            "homepage": "https://github.com/ssovit/RapidTikTok",
+            "keywords": [
+                "tiktok-api",
+                "tiktok-scraper"
+            ],
+            "time": "2020-08-26T14:01:21+00:00"
         }
     ],
     "packages-dev": [],
